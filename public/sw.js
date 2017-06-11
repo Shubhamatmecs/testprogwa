@@ -1,6 +1,5 @@
-const cacheList = ['/', '/public/index.html', '/public/icon1.png',
-                    '/public/', '/public/test.js', '/public/error.html',
-                    'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js']
+const cacheList = ['./', './index.html', './icon1.png',
+                    './test.js', './error.html']
 
 self.addEventListener('install', function (event) {
     console.log(event);
@@ -28,7 +27,7 @@ self.addEventListener('fetch', function(event) {
                 return response;
             })
         }).catch(function() {
-            return caches.match('/public/error.html')
+            return caches.match('./error.html')
         })
     )
 });
