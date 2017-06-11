@@ -1,7 +1,7 @@
 console.log("test loaded");
 
 if(navigator.serviceWorker) {
-    navigator.serviceWorker.register('https://rawgit.com/Shubhamatmecs/testprogwa/master/public/sw.js', {scope: '/public/'})
+    navigator.serviceWorker.register('./sw.js', {scope: '/public/'})
     .then(res => {
         console.log('successfully registered');
         console.log(res);
