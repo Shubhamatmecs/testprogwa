@@ -1,25 +1,25 @@
 {
-  "name": "Test",
-  "short_name": "Test",
+  "name": "Shubham Tripathi",
+  "short_name": "Shubham",
   "icons": [
     {
-    "src": "./icon1.png",
+    "src": "./img1.png",
       "sizes": "128x128",
       "type": "image/png"
     }, {
-      "src": "./icon1.png",
+      "src": "./img1.png",
       "sizes": "144x144",
       "type": "image/png"
     }, {
-      "src": "./icon1.png",
+      "src": "./img1.png",
       "sizes": "152x152",
       "type": "image/png"
     }, {
-      "src": "./icon1.png",
+      "src": "./img1.png",
       "sizes": "192x192",
       "type": "image/png"
     }, {
-      "src": "./icon1.png",
+      "src": "./img1.png",
       "sizes": "256x256",
       "type": "image/png"
     }],
