@@ -13,6 +13,6 @@ if(navigator.serviceWorker) {
 setTimeout(function(){ 
     console.log("getting data");
     fetch('/getData').then(function(response) {
-        console.log(response);
+        $('#data').innerHTML = response;
     })
 }, 3000);
