@@ -10,6 +10,18 @@ if(navigator.serviceWorker) {
     });
 }
 
+var isTooSoon = true;
+window.addEventListener("beforeinstallprompt", function(e) {
+  if (isTooSoon) {
+    e.preventDefault(); // Prevents prompt display
+    // Prompt later instead:
+    setTimeout(function() {
+      isTooSoon = false;
+      e.prompt(); // Throws if called more than once or default not prevented
+    }, 2000);
+  }
+});
+
 setTimeout(function(){ 
     console.log("getting data");
     fetch('/getData').then(function(response) {

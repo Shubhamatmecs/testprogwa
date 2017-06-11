@@ -33,15 +33,3 @@ self.addEventListener('fetch', function(event) {
 });
 
 console.log('hello');
-
-var isTooSoon = true;
-window.addEventListener("beforeinstallprompt", function(e) {
-  if (isTooSoon) {
-    e.preventDefault(); // Prevents prompt display
-    // Prompt later instead:
-    setTimeout(function() {
-      isTooSoon = false;
-      e.prompt(); // Throws if called more than once or default not prevented
-    }, 2000);
-  }
-});
