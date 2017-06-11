@@ -21,10 +21,3 @@ window.addEventListener("beforeinstallprompt", function(e) {
     }, 2000);
   }
 });
-
-setTimeout(function(){ 
-    console.log("getting data");
-    fetch('/getData').then(function(response) {
-        $('#data').innerHTML = response;
-    })
-}, 3000);
