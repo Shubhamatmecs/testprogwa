@@ -1,7 +1,7 @@
 console.log("test loaded");
 
 if(navigator.serviceWorker) {
-    navigator.serviceWorker.register('./sw.js', {scope: '/public/'})
+    navigator.serviceWorker.register('./sw.js')
     .then(res => {
         console.log('successfully registered');
         console.log(res);
